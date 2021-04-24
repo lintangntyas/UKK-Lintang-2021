@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_nisn_pembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/didact_gothic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nisn : 123456789" />
+
+        <TextView
+            android:id="@+id/tv_tgl_pembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/didact_gothic"
+            app:layout_constraintStart_toStartOf="@+id/tv_nisn_pembayaran"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nisn_pembayaran"
+            tools:text="Tanggal : 2021-04-07" />
+
+        <TextView
+            android:id="@+id/tv_bulan_pembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="bulan : April"
+            app:layout_constraintStart_toStartOf="@+id/tv_tgl_pembayaran"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tgl_pembayaran" />
+
+        <TextView
+            android:id="@+id/tv_tahun_pembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="Tahun : 2021"
+            app:layout_constraintStart_toStartOf="@+id/tv_bulan_pembayaran"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bulan_pembayaran" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
